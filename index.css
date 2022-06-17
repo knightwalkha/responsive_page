@@ -1,0 +1,143 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    background: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.first_container {
+    height: 100vh;
+    justify-content: center;
+    padding-left: 300px;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.word {
+    color: white;
+}
+
+.second_container {
+    height: 100vh;
+}
+
+.header {
+    width: 460px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: hsl(248, 32%, 49%);
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 10vh;
+    margin-left: 70px;
+}
+
+.shadow {
+    box-shadow: 5px 10px rgba(0,0,0,0.2);
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#container {
+    width: 400px;
+    height: 370px;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: white;
+    margin-left: 70px;
+}
+
+.shadow2 {
+    box-shadow: 5px 10px rgba(0,0,0,0.2);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background: hsl(0, 100%, 74%);
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: none;
+        min-width: 100vh;
+    }
+
+    .first_container {
+        height: 50vh;
+        margin-top: 100px;
+    }
+    
+    .second_container {
+        height: 50vh;
+    }
+}
